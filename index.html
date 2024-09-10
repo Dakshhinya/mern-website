@@ -3,10 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RESUME</title>
+          <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            /* height: 100vh; */
+            width: 100vw;
+            background-color: #f5efef;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            color: rgb(1, 2, 3);
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .section1 {
+            width: 70%;
+            height: 12rem;
+            /* background-color: rgb(117, 7, 7); */
+            color: aliceblue;
+            background: #1d4350; 
+            background: -webkit-linear-gradient(to right, #1d4350, #a43931);
+            background: linear-gradient(to right, #1d4350, #a43931);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            box-shadow:
+  3.9px 3.9px 2.7px rgba(0, 0, 0, 0.022),
+  9.9px 9.9px 6.9px rgba(0, 0, 0, 0.031),
+  20.2px 20.2px 14.2px rgba(0, 0, 0, 0.039),
+  41.6px 41.6px 29.2px rgba(0, 0, 0, 0.048),
+  114px 114px 80px rgba(0, 0, 0, 0.07)
+;
+        }
+
+        .profile-img-section {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-data {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .profile-img {
+            height: 8rem;
+            width: 8rem;
+            border-radius: 50%;
+        }
+
+        .section2 {
+            width: 70%;
+            height: 10rem;
+            /* background-color: aquamarine; */
+           /* border: 1px solid rgb(231, 11, 18);*/
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+
+        .section3 {
+            width: 70%;
+            height: 20rem;
+            /* background-color: aquamarine; */
+            /* border: 1px solid rgb(220, 11, 21); */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+
+        .section4 {
+            width: 70%;
+            height: 12rem;
+            /* background-color: aquamarine; */
+            /* border: 1px solid rgb(228, 11, 11); */
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+            margin-top: 25px;
+        }
+
+        .section-title {
+            /* height: 10%; */
+            color: rgb(14, 1, 1);
+            font-weight: bold;
+            padding-bottom: 2%;
+        }
+
+        .ed-table {
+            width: 100%;
+            border: 1px solid rgb(9, 1, 1);
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            border: 1px solid rgb(12, 2, 2);
+        }
+
+        .companies {
+            font-weight: bold;
+            color: rgb(0, 3, 2);
+        }
+        .color-primary{
+            color: aqua;
+        }
+    </style>
+
 </head>
 <body>
-    hello
+<div class="section1">
+    <div class="profile-img-section">
+        <img src="assets/logo.JPG" alt="logo" class="profile-img">
+    </div>
+    <div class="profile-data">
+        <h1>Dakshinya L</h1>
+        <h5>dakku172004@gmail.com</h5>
+    </div>
+</div>
+<div class="section2">
+    <h1 class="section-title">
+       Objective
+       </h1>
+    <p>
+    <j>I am a passionate and driven Software Developer Fresher with a strong foundation 
+    in programming, web development, and data analysis. Having completed a PowerBI 
+    course and gained practical experience through internships, I am eager to apply my 
+    knowledge to real-world projects.</j>
+    </p>
+</div>
+<div class="section3">
+    <h1 class="section-title">
+       Education
+    </h1>
+        <table class="ed-table">
+            <tr>
+                <th>Degree</th>
+                <th>Campus</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td>d1</td>
+                <td>stanes</td>
+                <td>85%</td>
+            </tr>
+            <tr>
+                <td>d2</td>
+                <td>stanes</td>
+                <td>83%</td>
+            </tr>
+            <tr>
+                <td>d3</td>
+                <td>siet</td>
+                <td>80%</td>
+            </tr>
+        </table>
+    </div>
+
+<div class="section4">
+    <h1 class="section-title">
+        Internships
+    </h1>
+    <p>
+        <span class="companies">COGNIFYZ</span><BR>web development intern<br>June 2024
+    </p>
+    <BR>
+    <p>
+        <span class="companies">SHADOWFOX</span><BR>web development intern<br> August 2024
+    </p>
+</div>
+<div class="section5"></div>
 </body>
 </html>
-hello
