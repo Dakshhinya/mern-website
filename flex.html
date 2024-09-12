@@ -7,10 +7,93 @@
    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
+    <style>
+        .green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+    grid-row: 2/3;
+    grid-column:2/3;
+}
+.blue{
+   background-color: blue;
+   grid-row: 3/-2;
+   grid-column:-2/-1;
+   
+}
+@media only screen and(max-width: 600px){
+    .blue{
+        background-color: aqua;
+    }
+    .green{
+    background-color: rgb(105, 150, 105);
+}
+.red{
+    background-color: rgb(189, 119, 119);
+    
+}
+}
+@keyframes myanimation {
+    from{
+        transform: translateY(0%);
+        scale: 0%;
+        rotate:90deg;
+    }
+    mid{
+        transform: translateY(50%);
+        scale:50%;
+        rotate: 180deg;
+    }
+    to{
+        transform: translateY(100%);
+        scale:100%;
+        rotate:360deg;
+    }
+}
+/* .green{
+    animation: 5s myanimation ease-in;
+}  */
+.red:hover{
+    background-color: brown;
+    transition: 2s background-color ease-in;
+}
+
+        .container{
+            display:grid;
+            grid-template-columns: 250px 250px 250px;
+            grid-template-rows: 250px 250px 250px; 
+            /* grid-template-columns: repeat(3,33%); */
+            /* grid-template-rows: repeat(3,auto); */
+            grid-gap: 1%; 
+         
+         } 
+        /* /@keyframes myani {
+            from{
+                transform: ;
+                opacity: 5px;
+            }
+            mid{
+                rotate: 180deg;
+            }
+            from{
+                rotate: 360deg;
+            }
+        }
+        .rotate{
+            animation: 5s myani ease-in;
+        } */
+    </style>
     <div class="container">
-        <div class="box green">green</div>
-        <div class="box red">red</div>
-        <div class="box blue">blue</div>
+        <div class="green">green</div>
+        <div class="red">red</div>
+        <div class="blue">blue</div>
     </div>
+
+    <!-- <div class="animation">
+        <div class="rotate">
+           😂
+        </div>
+    </div> -->
 </body>
 </html>
