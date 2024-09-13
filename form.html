@@ -51,7 +51,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     width: 110%; 
     max-width: 500px;
     height: 40px;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
     border-color: antiquewhite; 
     border: none;
     padding: 10px;
@@ -93,37 +93,48 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     }
 </style>
 <body>   
-   
-    <form class="form" onsubmit="myfunc(e)">
+    <form class="form" onsubmit="myfunc(event)">
         <div class="section-title">
-            <h1><B>LOGIN</B></h1>
+            <h1><b>LOGIN</b></h1>
         </div>
         <div class="name">
             <input class="box-size" type="text" name="name" id="name" placeholder="firstname" required/><br>
         
-        <input class="box-size" type="email" name="mail" id="mail" placeholder="email id" required/><br>
+            <input class="box-size" type="email" name="mail" id="mail" placeholder="email id" required/><br>
 
+            <input class="box-size" type="tel" name="phn" id="phn" placeholder="phone number" required/><br>
 
-        <input class="box-size" type="tel" name="phn" id="phn" placeholder="phone number" required/><br>
-    
-   
-        <input class="box-size" type="password" name="pwd" id="pwd" placeholder="password" required/>
+            <input class="box-size" type="password" name="pwd" id="pwd" placeholder="password" required/>
         
-        <button type="submit" class="submit-btn">Submit</button>
-    </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </div>
     </form>
-    </body>
+  
+    <script>
+        function myfunc(event) {
+            event.preventDefault(); // Prevent form submission and page reload
+            
+            let name = document.getElementById("name").value;  
+            let email = document.getElementById("mail").value;
+            let phn = document.getElementById("phn").value; 
+            let pwd = document.getElementById("pwd").value; 
+
+            console.log("Name: " + name);
+            console.log("Email: " + email);
+            console.log("Phone: " + phn);
+            console.log("Password: " + pwd);
+
+            alert("Registration Successful!");
+
+            const data={
+                uname:name,
+                uemail:email,
+                uph:phn,
+                upass:pwd
+            }
+            const {uname,uemail,uph,upass}=data;
+            console.log(uemail)
+        }
+    </script>
 </body>
 </html>
-<script>
-        const name=document.getElementById("name").value;  
-        let email=document.getElementById("email").value;
-        let ph=document.getElementById("ph").value; 
-        let pwd=document.getElementById("pwd").value;  
-        alert("Registration Successfull!");
-        function myfunc(e) {
-            e.preventDefault();
-            console.log(name+" "+email+" "+ph+" "+pwd)
-    }
-</script>
-
