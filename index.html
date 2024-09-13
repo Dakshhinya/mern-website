@@ -4,49 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RESUME</title>
-          <style>
+    <style>
         * {
-            margin: 0px;
-            padding: 0px;
+            margin: 0;
+            padding: 0;
         }
 
         body {
-            /* height: 100vh; */
             width: 100vw;
             background-color: white;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
-            color: rgb(1, 2, 3);
             flex-direction: column;
-            /* justify-content: start; */
             align-items: center;
+            color: rgb(1, 2, 3);
             margin-top: 2.5%;
-            /* border-radius: 20%; */
         }
 
         .section1 {
             width: 70%;
             height: 12rem;
-            
             color: aliceblue;
-            background: #333333; 
-            background: -webkit-linear-gradient(to right, #333333, #dd1818);
             background: linear-gradient(to right, #333333, #dd1818);
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            box-shadow:
-  3.9px 3.9px 2.7px rgba(0, 0, 0, 0.022),
-  9.9px 9.9px 6.9px rgba(0, 0, 0, 0.031),
-  20.2px 20.2px 14.2px rgba(0, 0, 0, 0.039),
-  41.6px 41.6px 29.2px rgba(0, 0, 0, 0.048),
-  114px 114px 80px rgba(0, 0, 0, 0.07);
-           /* border-radius:10% ;  */
-           /* margin-top: 20px; */
-           /* margin-bottom: 25px; */
+            box-shadow: 3.9px 3.9px 2.7px rgba(0, 0, 0, 0.022),
+                        9.9px 9.9px 6.9px rgba(0, 0, 0, 0.031),
+                        20.2px 20.2px 14.2px rgba(0, 0, 0, 0.039),
+                        41.6px 41.6px 29.2px rgba(0, 0, 0, 0.048),
+                        114px 114px 80px rgba(0, 0, 0, 0.07);
         }
-         
+        .section6{
+            width: 70%;
+            height: 3rem;
+            color: aliceblue;
+            background: linear-gradient(to right, #333333, #dd1818);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 3.9px 3.9px 2.7px rgba(0, 0, 0, 0.022),
+                        9.9px 9.9px 6.9px rgba(0, 0, 0, 0.031),
+                        20.2px 20.2px 14.2px rgba(0, 0, 0, 0.039),
+                        41.6px 41.6px 29.2px rgba(0, 0, 0, 0.048),
+                        114px 114px 80px rgba(0, 0, 0, 0.07);
+                        gap: 3rem;
+        }
+
+        
         .profile-img-section {
             width: 50%;
             height: 100%;
@@ -67,420 +74,223 @@
             height: 8rem;
             width: 8rem;
             border-radius: 50%;
-            background: rgba( 155, 155, 155, 0.15 );
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-            backdrop-filter: blur( 2.5px );
-            -webkit-backdrop-filter: blur( 2.5px );
-            border-radius: 80px;
-            border: 0px solid rgba( 255, 255, 255, 0.18 );
+            background: rgba(155, 155, 155, 0.15);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(2.5px);
+            border: 0px solid rgba(255, 255, 255, 0.18);
         }
 
-        .section2 {
-            width: 70%;
-            height: 10rem;
+        
+        .container {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-            margin-top: 2px;
-            margin-bottom: 5px;
+            width: 70%;
+            justify-content: space-between;
         }
 
-        .section3 {
-            width: 70%;
-            height: 20rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-            /* padding: 10px; */
+        .left-half, .right-half {
+            width: 48%; 
         }
 
-        .section4 {
-            width: 70%;
-            height: 12rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-            /* padding: 10px; */
-            margin-top: 30px;
-            margin-bottom: 10px;
+        .section {
+            margin: 2.5rem 0;
         }
-        .section10 {
-            width: 70%;
-            height: 12rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-            /* padding: 10px; */
-            margin-top: 30px;
-            margin-bottom: 40px;
-        }
-        .section9 {
-            width: 70%;
-            height: 12rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-            /* padding: 10px; */
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .section5{
-            width: 70%;
-            height: 10rem;
-            display: flex;
-            flex-direction: column;
-            justify-content:center;
-            align-items: start;
-            margin-bottom: 10px;
-        }
-        .section6{
-            width: 70%;
-            height: 2rem;
-            display: flex;
-            flex-direction: row;
-            justify-content:center;
-            align-items: center;
-            /* padding: 10px; */
-            margin-top: 38px;
-            gap:3rem;
-            font-weight: bold;
-            background:  ;
-            background: -webkit-linear-gradient(to right, #c31432, #240b36);
-            background: linear-gradient(to right, #c31432, #240b36);
-        }
-        .section7{
-            width: 70%;
-            height: 3rem;
-            display: flex;
-            flex-direction: row;
-            justify-content:center;
-            align-items: center;
-            /* padding: 10px; */
-            margin-top: 38px;
-            gap:3rem;
-            font-weight: bold;
-        }
-        .section8 {
-        width: 70%;
-        /* height: 20%; */
-        display: flex;
-        flex-direction:column ;
-        justify-content: space-around;
-        align-items: center; 
-        margin-top: 20px;
-        /* gap: 1rem;  */
-        font-weight: bold;
-        /* margin-bottom: 20px; */
-    }
 
-        li{
-            list-style: square;
-        }
         .section-title {
-            /* height: 10%; */
-            width: 100%;
             color: rgb(155, 10, 10);
             font-weight: bold;
             padding-bottom: 1%;
-            align-items: center;
-            justify-items:left ;
         }
 
         .ed-table {
             width: 100%;
-            border: 2.5px solid rgb(223, 16, 16);
             border: none;
-            align-items: center;
         }
 
-        th,
-        td {
+        th, td {
             padding: 1rem;
             border: 1px solid rgb(225, 16, 16);
-            align-items: center;
         }
-        th{
+
+        th {
             background-color: #c31432;
-            
         }
-th,td,table{
-  border: none;
-}
+
         .companies {
             font-weight: bold;
             color: rgb(0, 3, 2);
         }
 
-        .text-white{
-            color: white;
+        ul {
+            list-style: square;
         }
 
-button {
- padding: 0.8em 1.8em;
- border: 2px solid #c31432;
- position: relative;
- overflow: hidden;
- background-color: transparent;
- text-align: center;
- text-transform: uppercase;
- font-size: 16px;
- transition: .3s;
- z-index: 1;
- font-family: inherit;
- color: #c31432;
-}
 
-button::before {
- content: '';
- width: 0;
- height: 300%;
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%) rotate(45deg);
- background: #c33717;
- transition: .5s ease;
- display: block;
- z-index: -1;
-}
+        button {
+            padding: 0.8em 1.8em;
+            border: 2px solid #c31432;
+            background-color: transparent;
+            text-transform: uppercase;
+            font-size: 16px;
+            transition: .3s;
+            z-index: 1;
+            color: #c31432;
+            position: relative;
+            overflow: hidden;
+        }
 
-button:hover::before {
- width: 105%;
-}
+        button::before {
+            content: '';
+            width: 0;
+            height: 300%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            background: #c33717;
+            transition: .5s ease;
+            z-index: -1;
+        }
 
-button:hover {
- color: #111;
-}
+        button:hover::before {
+            width: 105%;
+        }
 
+        button:hover {
+            color: #111;
+        }
 
+        *::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+            border-radius: 10px;
+            background-color: #CCCCCC;
+        }
 
+        *::-webkit-scrollbar {
+            width: 10px;
+            background-color: #F5F5F5;
+        }
 
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #0f0404;
-  border: 1px solid #c4baba;
-  transition: .4s;
-  border-radius: 32px;
-  outline: none;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 1.5rem;
-  width: 1.5rem;
-  border-radius: 50%;
-  outline: 2px solid #B0B0B0;
-  left: -1px;
-  bottom: -1px;
-  background-color: #f1ecec;
-  transition: transform .25s ease-in-out 0s;
-}
-
-.slider-icon {
-  opacity: 0;
-  height: 12px;
-  width: 12px;
-  stroke-width: 8;
-  position: absolute;
-  z-index: 999;
-  stroke: #222222;
-  right: 60%;
-  top: 30%;
-  transition: right ease-in-out .3s, opacity ease-in-out .15s;
-}
-
-input:checked + .slider {
-  background-color: #222222;
-}
-
-input:checked + .slider .slider-icon {
-  opacity: 1;
-  right: 20%;
-}
-
-input:checked + .slider:before {
-  transform: translateX(1.5em);
-  outline-color: #181818;
-}
-*::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
-	border-radius: 10px;
-	background-color: #CCCCCC;
-}
-
-*::-webkit-scrollbar
-{
-	width: 10px;
-	background-color: #F5F5F5;
-}
-
-*::-webkit-scrollbar-thumb
-{
-	border-radius: 5px;
-	background-color: hsla(0, 68%, 50%, 0.796);
-	background-image: -webkit-linear-gradient(90deg,
-											  transparent,
-											  rgba(0, 0, 0, 0.4) 50%,
-											  transparent,
-											  transparent)
-}
-.centre{
-  display: flex;
-  justify-content:flex;
-  align-items:flex-start;
-}
-.section {
-    margin: 0.5rem 0; 
-}
-.section1, .section2, .section3, .section4, .section5, .section6, .section7, .section8 {
-    margin: 0.5rem 0;
-}
-
+        *::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background-color: hsla(0, 68%, 50%, 0.796);
+        }
     </style>
-<link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 </head>
 <body>
- 
-<div class="section1">
-    <div class="profile-img-section">
-        <img src="assets/logo.JPG" alt="logo" class="profile-img">
+
+    <div class="section1">
+        <div class="profile-img-section">
+            <img src="assets/logo.JPG" alt="logo" class="profile-img">
+        </div>
+        <div class="profile-data">
+            <h1>Dakshinya L</h1>
+            <h5>dakku172004@gmail.com</h5>
+        </div>
     </div>
     
-    <div class="profile-data">
-        <h1>Dakshinya L</h1>
-        <h5>dakku172004@gmail.com</h5>
-    </div>
-</div>
-<div class="section2">
-    <h1 class="section-title">
-       Objective
-       </h1>
-    <p>
-    I am a passionate and driven Software Developer Fresher with a strong foundation 
-    in programming, web development, and data analysis. Having completed a PowerBI 
-    course and gained practical experience through internships, I am eager to apply my 
-    knowledge to real-world projects.
-    </p>
-</div>
-<div class="section3">
-    <h1 class="section-title">
-       Education
-    </h1>
-        <table class="ed-table">
-            <tr>
-                <th>Degree</th>
-                <th>Campus</th>
-                <th>Score</th>
-            </tr>
-            <tr>
-                <td>Higher Secondary</td>
-                <td>Stanes Anglo Indian Higher Secondary School</td>
-                <td>85%</td>
-            </tr>
-            <tr>
-                <td>Senior Secondary</td>
-                <td>Stanes Anglo Indian Higher Secondary School</td>
-                <td>83%</td>
-            </tr>
-            <tr>
-                <td>Under Graduate</td>
-                <td>Sri Shakthi Institute of Engineering and Technology</td>
-                <td>80%</td>
-            </tr>
-        </table>
+    <div class="container">
+        <div class="left-half">
+            <div class="section section2">
+                <h1 class="section-title">Objective</h1>
+                <p>
+                    I am a passionate and driven Software Developer Fresher with a strong foundation 
+                    in programming, web development, and data analysis. Having completed a PowerBI 
+                    course and gained practical experience through internships, I am eager to apply my 
+                    knowledge to real-world projects.
+                </p>
+            </div>
+    
+            <div class="section section3">
+                <h1 class="section-title">Education</h1>
+                <table class="ed-table">
+                    <tr>
+                        <th>Degree</th>
+                        <th>Campus</th>
+                        <th>Score</th>
+                    </tr>
+                    <tr>
+                        <td>Higher Secondary</td>
+                        <td>Stanes Anglo Indian Higher Secondary School</td>
+                        <td>85%</td>
+                    </tr>
+                    <tr>
+                        <td>Senior Secondary</td>
+                        <td>Stanes Anglo Indian Higher Secondary School</td>
+                        <td>83%</td>
+                    </tr>
+                    <tr>
+                        <td>Under Graduate</td>
+                        <td>Sri Shakthi Institute of Engineering and Technology</td>
+                        <td>80%</td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="section section4">
+                <h1 class="section-title">Internships</h1>
+                <p><span class="companies">COGNIFYZ</span><br>web development intern<br>June 2024</p>
+                <p><span class="companies">SHADOWFOX</span><br>web development intern<br>August 2024</p>
+            </div>
+        </div>
+
+        <div class="right-half">
+            <div class="section section5">
+                <h1 class="section-title">Skills</h1>
+                <ul>
+                    <li>C</li>
+                    <li>JAVA</li>
+                    <li>MERN</li>
+                    <li>PowerBI</li>
+                    <li>SQL</li>
+                    <li>Git and Github</li>
+                </ul>
+            </div>
+    
+            <div class="section section10">
+                <h1 class="section-title">Projects</h1>
+                <p>
+                    <span class="companies">Hospital Management System</span><br>Implemented mobile devices and online ambulance booking to expedite emergency services and optimize
+                    real-time resource allocation.<br><br>
+                </p>
+                <p>
+                    <span class="companies">Facial Recognition Based Attendance System</span><br>A face recognition-based attendance system automates attendance tracking by using facial recognition
+                    technology to identify individuals. It captures live images or video, detects faces, and compares them against a
+                    pre-registered database to verify identity.<br><br>
+                </p>
+            </div>
+    
+            <div class="section section9">
+                <h1 class="section-title">Areas of Interest</h1>
+                <p>
+                    <span class="companies">Web Development</span><br><u>Frontend Development:</u> Designing and building the user interface and user experience of web applications.<br>
+                    <u>Backend Development:</u> Building and maintaining the server-side logic, databases, and APIs.
+                </p>
+            </div>
+    
+            <div class="section section5">
+                <h1 class="section-title">Certifications</h1>
+                <ul>
+                    <li>Basics of Java</li>
+                    <li>PowerBI</li>
+                    <li>Basics of SQL</li>
+                    <li>Git and Github</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
-<div class="section4">
-    <h1 class="section-title">
-        Internships
-    </h1>
-    <p>
-        <span class="companies">COGNIFYZ</span><BR>web development intern<br>June 2024
-    </p>
-    <BR>
-    <p>
-        <span class="companies">SHADOWFOX</span><BR>web development intern<br> August 2024
-    </p>
-</div>
-<div class="section9">
-    <h1 class="section-title">
-        Areas of Interest
-    </h1>
-    <p>
-        <span class="companies">Web Development</span><br><u>Frontend Development:</u> Designing and building the user interface and user experience of web applications.<br>
-        <u>Backend Development:</u> Building and maintaining the server-side logic, databases, and APIs.<BR><br>
-    </p>
+    <div class="section6">
+        <a href="tel:+91 9600574976">
+            <i class='bx bxs-phone'></i>
+        </a>
+        <a href="mailto:dakku172004">
+            <i class='bx bxl-gmail'></i>
+        </a>
+        <a href="https://www.linkedin.com/in/dakshinya-l-7512b5279/" target="_blank" rel="noopener noreferrer">
+            <i class='bx bxl-linkedin-square'></i>
+        </a>
+    </div>
     
-</div>
-<div class="section5">
-<h1  class="section-title" >
-    Skills
-</h1>
-<ul>
-  <li>C</li>
-    <li>JAVA</li>
-    <li>MERN</li>
-    <li>PowerBI</li>
-    <li>SQL</li>
-    <li>Git and Github</li>
-   
-</ul>
-</div>
-<div class="section5">
-<h1  class="section-title" >
-    Certifications
-</h1>
-<ul>
-  <li>Basics of Java</li>
-    <li>PowerBI</li>
-    <li>Basics of SQL</li>
-    <li>Git and Github</li>
-   
-</ul>
-</div>
-<div class="section10">
-  <h1 class="section-title">
-      Projects
-  </h1>
-  <p>
-        <span class="companies">Hospital Management System</span><br>Implemented mobile devices and online ambulance booking to expedite emergency services and optimize
-        real-time resource allocation.<BR>
-          <br>
-    </p>
-    <p>
-        <span class="companies">Facial Recognition Based Attendance System</span><br>A face recognition-based attendance system automates attendance tracking by using facial recognition
-        technology to identify individuals. It captures live images or video, detects faces, and compares them against a
-        pre-registered database to verify identity.<BR><br>
-    </p>
-</div>
-<div class="section7">
-    <button class="btn" onclick="location.href='https://drive.google.com/file/d/1FXv0A9UNhulCDT-siSIBINTICHqX-jql/view?usp=sharing';" >
-        RESUME
-    </button>
-</div>
-<div class="section6">
-    <a href="tel:+91 9600574976">
-        <i class='bx bxs-phone'></i>
-    </a>
-    <a href="mailto:dakku172004">
-        <i class='bx bxl-gmail'></i>
-    </a>
-    <a href="https://www.linkedin.com/in/dakshinya-l-7512b5279/" target="_blank" rel="noopener noreferrer">
-        <i class='bx bxl-linkedin-square' ></i>
-    </a>
-</div>
-</body>
-</html>
+    </body>
+    
