@@ -27,7 +27,7 @@
     .form{
         background-color:black;
         color: white;
-        height: 70vh;
+        height: 80vh;
         width: 40vw;
         display: flex;
         flex-direction: column;
@@ -68,7 +68,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     justify-content: center;
     width: 100%;
     padding-bottom: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     margin-top:-110px;
 }
 
@@ -104,7 +104,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
             <input class="box-size" type="tel" name="phn" id="phn" placeholder="phone number" required/><br>
 
-            <input class="box-size" type="password" name="pwd" id="pwd" placeholder="password" required/>
+            <input class="box-size" type="password" name="pwd" id="pwd" placeholder="password" required/><br>
+            <input class="box-size" type="number" name="age" id="age" placeholder="age" required/>
         
             <button type="submit" class="submit-btn">Submit</button>
         </div>
@@ -112,28 +113,41 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   
     <script>
         function myfunc(event) {
-            event.preventDefault(); // Prevent form submission and page reload
+            event.preventDefault();
             
             let name = document.getElementById("name").value;  
             let email = document.getElementById("mail").value;
             let phn = document.getElementById("phn").value; 
             let pwd = document.getElementById("pwd").value; 
+            let age = document.getElementById("age").value; 
+            if(name!=="" && email!=="" && phn!==0 && pwd!=="" && age!==0){
+                if(name==="dakku"  || email==="a@a.a"){
+                    console.log("Registration Successful!");
+                }
+                else{
+                    console.log("this name/email already taken");
 
+                }
+            }else{
+                console.print("fields should not be empty!")
+            }
             console.log("Name: " + name);
             console.log("Email: " + email);
             console.log("Phone: " + phn);
             console.log("Password: " + pwd);
+            console.log("Age: " + age);
 
-            alert("Registration Successful!");
 
             const data={
                 uname:name,
                 uemail:email,
                 uph:phn,
-                upass:pwd
+                upass:pwd,
+                uage:age,
+                utype:age >= 18 ? 'major':'minor'
             }
-            const {uname,uemail,uph,upass}=data;
-            console.log(uemail)
+            const {uname,uemail,uph,upass,uage,utype}=data;
+            console.log(utype)
         }
     </script>
 </body>
